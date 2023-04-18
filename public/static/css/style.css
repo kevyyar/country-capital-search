@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Anuphan&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Anuphan", sans-serif;
+}
+
+header {
+  background-color: dodgerblue;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header h1 {
+  color: #fff;
+}
+
+#search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+#search label {
+  margin-right: 10px;
+  font-size: 20px;
+  font-style: italic;
+}
+
+#search-country {
+  padding: 5px;
+  border-radius: 8px;
+  outline: none;
+  border: 1px solid #000;
+  box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.2);
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+#search-submit {
+  padding: 10px 20px;
+  background-color: dodgerblue;
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  transition: background-color 0.3s ease-in-out;
+}
+
+#search-submit:hover {
+  background-color: blue;
+  cursor: pointer;
+}
+
+#country-results {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 600px;
+  margin: 50px auto 0;
+  /* background-color: red; */
+}
+
+#country-results div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+#country-results div > p,
+#country-results div > span {
+  font-size: 40px;
+}
