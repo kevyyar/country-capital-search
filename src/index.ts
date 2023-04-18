@@ -26,7 +26,7 @@ function createCountryElement(country: Country): HTMLDivElement {
   const nameElement = document.createElement("p");
   const capitalElement = document.createElement("p");
   const countryFlag = document.createElement("span");
-  nameElement.textContent = country.name.common;
+  nameElement.textContent = `${country.name.common} -  `;
   capitalElement.textContent = country.capital;
   countryFlag.textContent = country.flag;
   countryElement.appendChild(nameElement);
