@@ -49,7 +49,7 @@ function renderCountries(countries: Country[]): void {
 
 async function listCountries(name: string): Promise<Country[]> {
   try {
-    const res = await fetch(`https://restcountries.com/v3.1/name/${name}`);
+    const res = await fetch(`https://restcountries.com/v3.1/name/${name}`,});
     if (!res.ok) {
       throw new Error(`HTTP Error! Failed to fetch country: ${res.statusText}`);
     }
